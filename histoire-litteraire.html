@@ -3,24 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Histoire de la  littéraire congolaise – Congo-lettres</title>
-  <link rel="canonical" href="https://mpouck.github.io/histoire-litteraire.html">
+  <title>Histoire littéraire – Congo-lettres</title>
+  <link rel="canonical" href="https://congolettres.github.io/histoire-litteraire.html">
   <meta name="description" content="Repères chronologiques de la littérature congolaise : tradition orale, premières publications, indépendance, grandes œuvres et nouvelle génération.">
   <meta name="keywords" content="histoire littéraire, littérature congolaise, chronologie, tradition orale, indépendance">
   <meta property="og:title" content="Histoire littéraire – Congo-lettres">
   <meta property="og:description" content="Repères chronologiques de la littérature congolaise : tradition orale, premières publications, indépendance, grandes œuvres et nouvelle génération.">
-  <meta property="og:url" content="https://mpouck.github.io/histoire-litteraire.html">
+  <meta property="og:url" content="https://congolettres.github.io/histoire-litteraire.html">
   <meta property="og:image" content="https://mpouck.github.io/image2.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="favicon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TSLNZGEPK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4TSLNZGEPK');
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet" />
@@ -1808,6 +1801,23 @@
       .profile-photo { width: 100%; max-width: 260px; margin: 0 auto; }
     }
   </style>
+<style>
+    /* Liens utiles (sources externes) */
+    .refs-sec { padding: 56px 0 8px; font-family: var(--font, 'DM Sans', sans-serif); }
+    .refs-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+    .refs-title { font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; color: var(--text-dark, #0d1b2a); margin-bottom: 6px; }
+    .refs-intro { font-size: .95rem; color: var(--text-muted, #64748b); margin-bottom: 22px; }
+    .refs-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .refs-list li { background: var(--bg-nav, #fff); border: 1px solid var(--border-nav, rgba(0,0,0,.07)); border-radius: 16px; padding: 16px 18px; }
+    .refs-list a { display: block; font-weight: 700; font-size: .95rem; color: var(--text-dark, #0d1b2a); text-decoration: underline; text-decoration-color: #c9a76c; text-underline-offset: 3px; margin-bottom: 4px; }
+    .refs-list a:hover { color: #c9a76c; }
+    .refs-list span { display: block; font-size: .85rem; line-height: 1.6; color: var(--text-muted, #64748b); }
+    @media (max-width: 640px) { .refs-inner { padding: 0 20px; } }
+  </style>
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Congo-lettres">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://congolettres.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Histoire littéraire", "item": "https://congolettres.github.io/histoire-litteraire.html"}]}</script>
 </head>
 <body>
 
@@ -1819,7 +1829,7 @@
 
       <!-- [CONFIG] Liens desktop -->
       <ul class="nav-links" role="list">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="blog.html">Blog</a></li>
 
         <li class="nav-has-dropdown" id="deskPages">
@@ -1830,11 +1840,12 @@
             </svg>
           </button>
           <div class="nav-drop-panel" id="pagesPanel" role="menu">
-            <a href="about.html"     role="menuitem"><span class="page-icon">👤</span> A propos de nous</a>
+            <a href="about.html"     role="menuitem"><span class="page-icon">👤</span> À propos</a>
             <a href="projet.html" role="menuitem"><span class="page-icon">🖼️</span> Projets</a>
           </div>
         </li>
 
+        <li><a href="cours.html">Cours</a></li>
         <li><a href="decouvertes.html">Découvertes</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -1890,6 +1901,7 @@
             </div>
           </div>
         </li>
+        <li><a href="cours.html" role="menuitem">Cours</a></li>
         <li><a href="decouvertes.html" role="menuitem">Découvertes</a></li>
         <li><a href="contact.html"    role="menuitem">Contact</a></li>
       </ul>
@@ -1938,15 +1950,15 @@
   <header class="page-hero">
     <div class="page-hero-inner">
       <p class="crumbs"><a href="index.html">Accueil</a> › <a href="index.html#themes">Thématiques</a> › Histoire littéraire</p>
-      <h1 class="page-title">Histoire de la littérature congolaise</h1>
+      <h1 class="page-title">Histoire littéraire</h1>
       <p class="page-lead">Des contes oraux aux romanciers d'aujourd'hui : suivez les grandes étapes de la littérature congolaise.</p>
-      <div class="chips"><span class="chip">Chronologie</span><span class="chip">Courants</span><span class="chip">Contexte</span></div>
+      <div class="chips"><span class="chip">Chronologie</span><span class="chip">Genres</span><span class="chip">Générations</span></div>
     </div>
   </header>
 
   <section class="sec" id="reperes"><div class="sec-inner"><div class="intro-card">
         <p>La littérature congolaise puise ses racines dans la tradition orale (contes, proverbes, épopées), avant de s'écrire en français au fil du XXᵉ siècle.</p>
-        <p>Les repères ci-dessous vous donnent le fil conducteur pour situer les auteurs et les œuvres.</p>
+        <p>Cette page suit l'évolution des œuvres, des genres et des générations d'écrivains. Pour le cadre politique et social de l'époque, consultez la page <a href="contexte-social.html" style="color:#c9a76c;font-weight:600">Contexte social</a>.</p>
   </div></div></section>
 
   <section class="sec" id="chronologie">
@@ -1956,12 +1968,12 @@
         <h2 class="sec-title">Grandes <span style="color:#c9a76c">étapes</span></h2>
       </div>
       <div class="book-grid">
-        <article class="book-card"><div class="book-cover"><img src="images/tradition-orale.jpg" alt="La tradition orale" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Avant l'écrit</span><h3 class="book-title">La tradition orale</h3><p class="book-desc">Contes, proverbes, chants et récits transmis de génération en génération : une base essentielle de l'écriture littéraire.</p></div></article>
-        <article class="book-card"><div class="book-cover"><img src="images/premiers-textes.jpg" alt="Les premiers textes écrits" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Années 1950</span><h3 class="book-title">Les premiers textes écrits</h3><p class="book-desc">Jean Malonga publie Cœur d'Aryenne en 1954, souvent cité comme premier roman congolais ; Tchicaya U Tam'si publie Le Mauvais Sang en 1955.</p></div></article>
-        <article class="book-card"><div class="book-cover"><img src="images/independance.jpg" alt="L'indépendance" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1960</span><h3 class="book-title">L'indépendance</h3><p class="book-desc">Le Congo accède à l'indépendance en 1960 : la littérature accompagne les débats sur l'identité et le pouvoir.</p></div></article>
-        <article class="book-card"><div class="book-cover"><img src="images/annees-1970.jpg" alt="L'affirmation" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Années 1970</span><h3 class="book-title">L'affirmation</h3><p class="book-desc">Henri Lopes publie Tribaliques en 1971 ; Sony Labou Tansi fonde le Rocado Zulu Théâtre en 1979.</p></div></article>
-        <article class="book-card"><div class="book-cover"><img src="images/annees-1980.jpg" alt="La satire du pouvoir" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Années 1980</span><h3 class="book-title">La satire du pouvoir</h3><p class="book-desc">Sony Labou Tansi et Henri Lopes publient plusieurs romans majeurs, dont La Vie et demie (1979) et Le Pleurer-Rire (1982).</p></div></article>
-        <article class="book-card"><div class="book-cover"><img src="images/aujourd-hui.jpg" alt="Une littérature mondiale" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Depuis les années 2000</span><h3 class="book-title">Une littérature mondiale</h3><p class="book-desc">Johnny chien méchant (2002), Verre Cassé (2005) : la littérature congolaise rayonne à l'international.</p></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/histoire/tradition-orale.jpg" alt="La tradition orale" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Avant l'écrit</span><h3 class="book-title">Les racines orales</h3><p class="book-desc">Contes, proverbes, chants et récits transmis de bouche en bouche fournissent aux écrivains leurs formes, leur rythme et leur sens de la parole.</p></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/histoire/premiers-textes.jpg" alt="Les premiers textes écrits" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Années 1950</span><h3 class="book-title">Les premiers textes écrits</h3><p class="book-desc">Jean Malonga publie Cœur d'Aryenne en 1954, souvent cité comme premier roman congolais ; Tchicaya U Tam'si publie Le Mauvais Sang en 1955.</p></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/histoire/annees-1960.jpg" alt="Poésie et théâtre des années 1960" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Années 1960</span><h3 class="book-title">Poésie et théâtre</h3><p class="book-desc">Tchicaya U Tam'si publie Épitomé (1962) ; Guy Menga fait jouer La Marmite de Koka-Mbala (1966) ; Tati-Loutard publie Les Racines congolaises (1968).</p></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/histoire/annees-1970.jpg" alt="L'affirmation" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Années 1970</span><h3 class="book-title">L'affirmation</h3><p class="book-desc">Henri Lopes publie Tribaliques en 1971 ; Sony Labou Tansi fonde le Rocado Zulu Théâtre en 1979.</p></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/histoire/annees-1980.jpg" alt="La satire du pouvoir" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Années 1980</span><h3 class="book-title">La satire du pouvoir</h3><p class="book-desc">Le roman satirique s'impose : La Vie et demie (1979), L'État honteux (1981) de Sony Labou Tansi et Le Pleurer-Rire (1982) d'Henri Lopes.</p></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/histoire/aujourd-hui.jpg" alt="Une littérature mondiale" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">Depuis les années 2000</span><h3 class="book-title">Une littérature mondiale</h3><p class="book-desc">Une nouvelle génération publie à l'étranger ; Mémoires de porc-épic d'Alain Mabanckou reçoit le prix Renaudot en 2006.</p></div></article>
       </div>
     </div>
   </section>
@@ -1969,14 +1981,14 @@
   <section class="sec" id="courants">
     <div class="sec-inner">
       <div class="sec-head">
-        <span class="sec-eyebrow">Courants</span>
-        <h2 class="sec-title">Ce qui <span style="color:#c9a76c">traverse l'histoire</span></h2>
+        <span class="sec-eyebrow">Genres et courants</span>
+        <h2 class="sec-title">Les grandes <span style="color:#c9a76c">tendances littéraires</span></h2>
       </div>
       <div class="theme-list">
-        <div class="theme-card"><span class="theme-ico">🗣️</span><span class="theme-name">L'oralité</span><span class="theme-desc">Une constante : la parole, le rythme et le conte irriguent l'écriture.</span></div>
-        <div class="theme-card"><span class="theme-ico">✊</span><span class="theme-name">L'engagement</span><span class="theme-desc">Écrire pour dire le pouvoir, l'histoire et la dignité.</span></div>
-        <div class="theme-card"><span class="theme-ico">😂</span><span class="theme-name">L'humour</span><span class="theme-desc">La satire et l'ironie, armes littéraires récurrentes.</span></div>
-        <div class="theme-card"><span class="theme-ico">🌍</span><span class="theme-name">Le dialogue avec le monde</span><span class="theme-desc">Exil, diaspora et rencontres de cultures nourrissent les œuvres.</span></div>
+        <div class="theme-card"><span class="theme-ico">📜</span><span class="theme-name">La poésie de la mémoire</span><span class="theme-desc">Images du fleuve, de la mer et du deuil : le poème dit l'histoire intime et collective.</span></div>
+        <div class="theme-card"><span class="theme-ico">📖</span><span class="theme-name">Le roman satirique</span><span class="theme-desc">Humour, ironie et invention verbale pour raconter le pouvoir.</span></div>
+        <div class="theme-card"><span class="theme-ico">🎭</span><span class="theme-name">Le théâtre engagé</span><span class="theme-desc">Une scène qui interpelle le public sur l'autorité et la justice.</span></div>
+        <div class="theme-card"><span class="theme-ico">✈️</span><span class="theme-name">L'écriture de la diaspora</span><span class="theme-desc">Des auteurs installés à l'étranger qui écrivent entre deux mondes.</span></div>
       </div>
     </div>
   </section>
@@ -1985,14 +1997,14 @@
     <div class="sec-inner">
       <div class="sec-head">
         <span class="sec-eyebrow">Méthode</span>
-        <h2 class="sec-title">Situer <span style="color:#c9a76c">une œuvre dans son contexte</span></h2>
+        <h2 class="sec-title">Situer <span style="color:#c9a76c">une œuvre dans l'histoire littéraire</span></h2>
         <p class="sec-sub">Quatre questions à se poser.</p>
       </div>
       <div class="steps">
-        <div class="step"><div><h3>Quand a-t-elle été écrite ?</h3><p>Reliez la date de publication aux événements politiques et culturels de l'époque.</p></div></div>
-        <div class="step"><div><h3>Qui est l'auteur ?</h3><p>Son parcours éclaire souvent ses thèmes et son style.</p></div></div>
-        <div class="step"><div><h3>Dans quel courant s'inscrit-elle ?</h3><p>Satire, engagement, oralité : quels traits retrouve-t-on ?</p></div></div>
-        <div class="step"><div><h3>Quel écho aujourd'hui ?</h3><p>Pourquoi cette œuvre est-elle encore lue et étudiée ?</p></div></div>
+        <div class="step"><div><h3>À quelle génération appartient l'auteur ?</h3><p>Repérez la période où il commence à publier et les écrivains de son époque.</p></div></div>
+        <div class="step"><div><h3>Quel est le genre de l'œuvre ?</h3><p>Roman, poème ou pièce : chaque genre a ses codes et sa propre histoire.</p></div></div>
+        <div class="step"><div><h3>Quelles œuvres l'ont précédée ?</h3><p>Cherchez les influences, les reprises et les ruptures avec les textes antérieurs.</p></div></div>
+        <div class="step"><div><h3>Quelle place occupe-t-elle aujourd'hui ?</h3><p>Prix, études, rééditions : mesurez la place de l'œuvre dans le patrimoine littéraire.</p></div></div>
       </div>
     </div>
   </section>
@@ -2007,6 +2019,19 @@
         <a href="blog.html" class="btn-primary">Lire les articles</a>
         <a href="index.html#themes" class="btn-secondary">Autres thématiques</a>
       </div>
+    </div>
+  </section>
+
+    <!-- refs-externes -->
+  <section class="refs-sec" aria-labelledby="refs-title">
+    <div class="refs-inner">
+      <h2 class="refs-title" id="refs-title">Pour aller plus loin</h2>
+      <p class="refs-intro">Pour creuser les repères de cette chronologie.</p>
+      <ul class="refs-list">
+        <li><a href="https://fr.wikipedia.org/wiki/Jean_Malonga" target="_blank" rel="noopener">Jean Malonga sur Wikipédia</a><span>L’auteur de Cœur d’Aryenne, souvent cité comme premier romancier congolais.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Tchicaya_U_Tam%27si" target="_blank" rel="noopener">Tchicaya U Tam’si sur Wikipédia</a><span>Sa vie, ses recueils et sa place dans la poésie d’expression française.</span></li>
+        <li><a href="https://gallica.bnf.fr/" target="_blank" rel="noopener">Gallica, la bibliothèque numérique de la BnF</a><span>Des livres, des revues et des journaux anciens à lire gratuitement en ligne.</span></li>
+      </ul>
     </div>
   </section>
 
@@ -2071,6 +2096,7 @@
           <ul>
             <li><a href="about.html">À propos</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="cours.html">Cours de français</a></li>
             <li><a href="decouvertes.html">Découvertes</a></li>
             <li><a href="projet.html">Projets</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -2135,9 +2161,9 @@
         <p class="footer-copy">© 2026 Congo-lettres. Tous droits réservés.</p>
         <nav class="footer-legal" aria-label="Liens légaux">
           <a href="conditions-utilisation.html">Conditions d'utilisation</a>
-          <a href="politique-confidentialite.html">Politiques de confidentialité</a>
-          <a href="#">cookies</a>
-          <a href="sitemap.xml">Sitemap</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="politique-confidentialite.html#cookies">Cookies</a>
+          <a href="sitemap.xml">Plan du site</a>
         </nav>
       </div>
     </div>
@@ -2248,7 +2274,7 @@
     icon: '🏠',
     title: 'Accueil',
     desc: 'Congo-lettres : articles et notions éducatives sur la littérature congolaise.',
-    href: 'https://mpouck.github.io/',
+    href: 'https://congolettres.github.io/',
     keywords: ['accueil', 'home', 'congo-lettres', 'littérature congolaise']
   },
   {
@@ -2256,7 +2282,7 @@
     icon: 'ℹ️',
     title: 'À propos',
     desc: 'Présentation de Congo-lettres, de son auteur et de sa mission éducative.',
-    href: 'https://mpouck.github.io/about.html',
+    href: 'https://congolettres.github.io/about.html',
     keywords: ['about', 'a propos', 'présentation', 'congo-lettres', 'auteur']
   },
   {
@@ -2264,7 +2290,7 @@
     icon: '📁',
     title: 'Projets',
     desc: 'Découvrez quelques projets et réalisations de Congo-lettres.',
-    href: 'https://mpouck.github.io/projet.html',
+    href: 'https://congolettres.github.io/projet.html',
     keywords: ['projets', 'réalisations', 'travaux']
   },
   {
@@ -2272,7 +2298,7 @@
     icon: '📖',
     title: 'Romans',
     desc: 'Le roman congolais : repères, œuvres incontournables et méthode de lecture.',
-    href: 'https://mpouck.github.io/romans.html',
+    href: 'https://congolettres.github.io/romans.html',
     keywords: ['roman', 'romans', 'littérature congolaise', 'Sony Labou Tansi', 'Mabanckou', 'Lopes', 'Dongala']
   },
   {
@@ -2280,7 +2306,7 @@
     icon: '🪶',
     title: 'Poésie',
     desc: 'La poésie congolaise : poètes, recueils majeurs et méthode de lecture.',
-    href: 'https://mpouck.github.io/poesie.html',
+    href: 'https://congolettres.github.io/poesie.html',
     keywords: ['poésie', 'poème', 'Tchicaya U Tam\'si', 'Tati-Loutard']
   },
   {
@@ -2288,7 +2314,7 @@
     icon: '🎭',
     title: 'Théâtre',
     desc: 'Le théâtre congolais : pièces, auteurs et méthode de lecture.',
-    href: 'https://mpouck.github.io/theatre.html',
+    href: 'https://congolettres.github.io/theatre.html',
     keywords: ['théâtre', 'pièce', 'Sony Labou Tansi', 'Rocado Zulu']
   },
   {
@@ -2296,31 +2322,55 @@
     icon: '✍️',
     title: 'Auteurs',
     desc: 'Portraits des grands écrivains congolais et leurs œuvres majeures.',
-    href: 'https://mpouck.github.io/auteurs.html',
+    href: 'https://congolettres.github.io/auteurs.html',
     keywords: ['auteurs', 'écrivains', 'portraits']
   },
   {
     type: 'Page',
+    icon: '👤',
+    title: "L'auteur du site",
+    desc: 'MPOUCK Jho Chadrack, professeur de français et fondateur de Congo-lettres.',
+    href: 'https://congolettres.github.io/mpouck-jho-chadrack.html',
+    keywords: ['auteur', 'mpouck', 'chadrack', 'professeur', 'fondateur', 'profil']
+  },
+  {
+    type: 'Page',
     icon: '🧭',
-    title: 'Méthodes',
-    desc: 'Dissertation, commentaire, résumé, fiche de lecture : les méthodes pour réussir.',
-    href: 'https://mpouck.github.io/methodes.html',
-    keywords: ['méthode', 'dissertation', 'commentaire', 'fiche de lecture']
+    title: 'Contexte social',
+    desc: 'Colonisation, indépendance, pouvoir, oralité, diaspora : le contexte qui éclaire les œuvres congolaises.',
+    href: 'https://congolettres.github.io/contexte-social.html',
+    keywords: ['contexte social', 'société', 'histoire', 'colonisation', 'indépendance', 'diaspora']
   },
   {
     type: 'Page',
     icon: '🕰️',
     title: 'Histoire littéraire',
     desc: 'Repères chronologiques de la littérature congolaise.',
-    href: 'https://mpouck.github.io/histoire-litteraire.html',
+    href: 'https://congolettres.github.io/histoire-litteraire.html',
     keywords: ['histoire', 'chronologie', 'littérature congolaise']
+  },
+  {
+    type: 'Auteur',
+    icon: '✍️',
+    title: 'Sony Labou Tansi',
+    desc: 'Biographie, œuvres complètes, prix et style du romancier et dramaturge congolais.',
+    href: 'https://congolettres.github.io/sony-labou-tansi.html',
+    keywords: ['Sony Labou Tansi', 'La Vie et demie', 'Rocado Zulu Théâtre', 'auteur', 'romancier', 'dramaturge']
+  },
+  {
+    type: 'Page',
+    icon: '🎓',
+    title: 'Cours de français',
+    desc: 'Les cours de langue, d\'expression écrite et de littérature, avec leur importance.',
+    href: 'https://congolettres.github.io/cours.html',
+    keywords: ['cours', 'français', 'grammaire', 'conjugaison', 'orthographe', 'dissertation']
   },
   {
     type: 'Page',
     icon: '📰',
     title: 'Blog',
     desc: 'Articles sur la littérature congolaise, le français et l\'éducation.',
-    href: 'https://mpouck.github.io/blog.html',
+    href: 'https://congolettres.github.io/blog.html',
     keywords: ['blog', 'articles', 'littérature', 'français', 'éducation']
   },
   {
@@ -2328,7 +2378,7 @@
     icon: '🔎',
     title: 'Découvertes',
     desc: 'Découvertes et notions éducatives à explorer sur Congo-lettres.',
-    href: 'https://mpouck.github.io/decouvertes.html',
+    href: 'https://congolettres.github.io/decouvertes.html',
     keywords: ['découvertes', 'notions', 'éducation', 'culture']
   },
   {
@@ -2336,7 +2386,7 @@
     icon: '✉️',
     title: 'Contact',
     desc: 'Contactez Congo-lettres pour une question ou une collaboration.',
-    href: 'https://mpouck.github.io/contact.html',
+    href: 'https://congolettres.github.io/contact.html',
     keywords: ['contact', 'email', 'collaboration', 'abonnement']
   },
 
@@ -2348,7 +2398,7 @@
     icon: '📜',
     title: 'Conditions d\'utilisation',
     desc: 'Consultez les conditions d\'utilisation du site.',
-    href: 'https://mpouck.github.io/conditions-utilisation.html',
+    href: 'https://congolettres.github.io/conditions-utilisation.html',
     keywords: ['conditions', 'mentions', 'utilisation', 'legal']
   },
   {
@@ -2356,7 +2406,7 @@
     icon: '🔒',
     title: 'Politique de confidentialité',
     desc: 'Informations sur la confidentialité et la protection des données.',
-    href: 'https://mpouck.github.io/politique-confidentialite.html',
+    href: 'https://congolettres.github.io/politique-confidentialite.html',
     keywords: ['confidentialité', 'données', 'privacy', 'rgpd']
   },
 
@@ -2368,7 +2418,7 @@
     icon: '✍️',
     title: 'Les tendances UI/UX qui vont dominer 2026',
     desc: 'Minimalisme, bento grids, interfaces IA : un tour des tendances design.',
-    href: 'https://mpouck.github.io/article-uiux-2026.html',
+    href: 'https://congolettres.github.io/article-uiux-2026.html',
     keywords: ['ui ux', 'design', 'tendances', 'interface', 'ux']
   },
   {
@@ -2376,7 +2426,7 @@
     icon: '\u270D\uFE0F',
     title: 'Comment rediger une dissertation francaise reussie en 2026',
     desc: 'Une methode precise et reproductible pour reussir la dissertation.',
-    href: 'https://mpouck.github.io/article-dissertation-francaise-2026.html',
+    href: 'https://congolettres.github.io/article-dissertation-francaise-2026.html',
     keywords: ['dissertation', 'francais', 'education', 'methode']
   },
 ];

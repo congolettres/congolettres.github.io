@@ -4,23 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cours de français – Congo-lettres</title>
-  <link rel="canonical" href="https://mpouck.github.io/cours.html">
+  <link rel="canonical" href="https://congolettres.github.io/cours.html">
   <meta name="description" content="Les cours de français de Congo-lettres : grammaire, conjugaison, orthographe, ponctuation, dissertation, commentaire composé, figures de style et plus encore.">
   <meta name="keywords" content="cours de français, grammaire, conjugaison, orthographe, ponctuation, dissertation, commentaire composé, figures de style">
   <meta property="og:title" content="Cours de français – Congo-lettres">
   <meta property="og:description" content="Les cours essentiels de langue, d'expression écrite et de littérature, avec l'importance de chacun.">
-  <meta property="og:url" content="https://mpouck.github.io/cours.html">
+  <meta property="og:url" content="https://congolettres.github.io/cours.html">
   <meta property="og:image" content="https://mpouck.github.io/image2.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="favicon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TSLNZGEPK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4TSLNZGEPK');
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet" />
@@ -1829,7 +1822,54 @@
     .cr-btn:hover svg { transform: translateX(3px); }
     @media (max-width: 960px) { .cr-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 600px) { .cr-grid { grid-template-columns: 1fr; } .cr-chip { font-size: .76rem; padding: 8px 14px; } }
+    /* Catégories */
+    .cr-card[data-cat="Langue"] { --cat: #3b82f6; }
+    .cr-card[data-cat="Expression écrite"] { --cat: #10b981; }
+    .cr-card[data-cat="Littérature"] { --cat: #c9a76c; }
+    .cr-card { border-top: 3px solid var(--cat, var(--border-nav)); }
+    .cr-card .cr-num { color: var(--cat, #c9a76c); }
+    .cr-card .cr-cat { color: var(--cat, #c9a76c); background: color-mix(in srgb, var(--cat, #c9a76c) 12%, transparent); border-color: color-mix(in srgb, var(--cat, #c9a76c) 30%, transparent); }
+    .cr-group { grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; margin: 18px 0 2px; padding-bottom: 14px; border-bottom: 1px solid var(--separator); }
+    .cr-group:first-child { margin-top: 0; }
+    .cr-group-ico { width: 46px; height: 46px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; background: color-mix(in srgb, var(--gc) 14%, transparent); }
+    .cr-group-name { font-size: 1.25rem; font-weight: 800; letter-spacing: -.03em; color: var(--text-dark); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .cr-group-count { font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; color: var(--gc); background: color-mix(in srgb, var(--gc) 12%, transparent); }
+    .cr-group-desc { font-size: .84rem; color: var(--text-muted); margin-top: 2px; }
+    .cr-chip .cr-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 7px; background: var(--gc, currentColor); }
+    /* Sections par catégorie */
+    .cr-grid { display: block; }
+    .cr-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .cr-section + .cr-section { margin-top: 52px; }
+    .cr-section .cr-group { margin: 0 0 22px; }
+    .cr-section .cr-pager { margin-top: 28px; }
+    @media (max-width: 960px) { .cr-cards { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .cr-cards { grid-template-columns: 1fr; } .cr-section + .cr-section { margin-top: 40px; } }
+    /* Pagination */
+    .cr-pager { display: none; align-items: center; justify-content: center; gap: 8px; margin-top: 38px; flex-wrap: wrap; }
+    .cr-pager.visible { display: flex; }
+    .cr-pg { font-family: var(--font); font-size: .84rem; font-weight: 600; min-width: 42px; height: 42px; padding: 0 14px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: var(--bg-nav); color: var(--text-muted); border: 1px solid var(--border-nav); transition: transform var(--ease), color var(--ease), background var(--ease), opacity var(--ease); }
+    .cr-pg:hover:not(:disabled):not(.active) { transform: translateY(-2px); color: var(--text-dark); }
+    .cr-pg.active { background: var(--btn-primary); color: var(--btn-p-text); border-color: transparent; }
+    .cr-pg:disabled { opacity: .4; cursor: not-allowed; }
+    @media (max-width: 600px) { .cr-pg { min-width: 38px; height: 38px; font-size: .78rem; padding: 0 11px; } }
   </style>
+<style>
+    /* Liens utiles (sources externes) */
+    .refs-sec { padding: 56px 0 8px; font-family: var(--font, 'DM Sans', sans-serif); }
+    .refs-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+    .refs-title { font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; color: var(--text-dark, #0d1b2a); margin-bottom: 6px; }
+    .refs-intro { font-size: .95rem; color: var(--text-muted, #64748b); margin-bottom: 22px; }
+    .refs-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .refs-list li { background: var(--bg-nav, #fff); border: 1px solid var(--border-nav, rgba(0,0,0,.07)); border-radius: 16px; padding: 16px 18px; }
+    .refs-list a { display: block; font-weight: 700; font-size: .95rem; color: var(--text-dark, #0d1b2a); text-decoration: underline; text-decoration-color: #c9a76c; text-underline-offset: 3px; margin-bottom: 4px; }
+    .refs-list a:hover { color: #c9a76c; }
+    .refs-list span { display: block; font-size: .85rem; line-height: 1.6; color: var(--text-muted, #64748b); }
+    @media (max-width: 640px) { .refs-inner { padding: 0 20px; } }
+  </style>
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Congo-lettres">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://congolettres.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Cours de français", "item": "https://congolettres.github.io/cours.html"}]}</script>
 </head>
 <body>
 
@@ -1970,7 +2010,7 @@
 
   <section class="sec" id="cours">
     <div class="sec-inner">
-      <div class="cr-filters" role="group" aria-label="Filtrer les cours"><button class="cr-chip active" data-f="all">Tous les cours (16)</button><button class="cr-chip" data-f="Langue">Langue (6)</button><button class="cr-chip" data-f="Expression écrite">Expression écrite (5)</button><button class="cr-chip" data-f="Littérature">Littérature (5)</button></div>
+      <div class="cr-filters" role="group" aria-label="Filtrer les cours"><button class="cr-chip active" data-f="all">Tous les cours (16)</button><button class="cr-chip" data-f="Langue"><i class="cr-dot" style="--gc:#3b82f6"></i>Langue (6)</button><button class="cr-chip" data-f="Expression écrite"><i class="cr-dot" style="--gc:#10b981"></i>Expression écrite (5)</button><button class="cr-chip" data-f="Littérature"><i class="cr-dot" style="--gc:#c9a76c"></i>Littérature (5)</button></div>
       <div class="cr-grid">
         <article class="cr-card" data-cat="Langue">
           <div class="cr-top"><span class="cr-num">01</span><span class="cr-cat">Langue</span></div>
@@ -2007,6 +2047,8 @@
           <p class="cr-why">Un vocabulaire riche permet de mieux comprendre les textes et de s'exprimer avec nuance.</p>
           <a class="cr-btn" href="cours-vocabulaire.html">Accéder au cours <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </article>
+        
+        
         <article class="cr-card" data-cat="Langue">
           <div class="cr-top"><span class="cr-num">06</span><span class="cr-cat">Langue</span></div>
           <h3 class="cr-title">Les accords</h3>
@@ -2014,6 +2056,17 @@
           <p class="cr-why">Les accords (sujet-verbe, participe passé) sont la première source de fautes à l'écrit : les maîtriser fait gagner de nombreux points.</p>
           <a class="cr-btn" href="cours-accords.html">Accéder au cours <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </article>
+        
+         <article class="cr-card" data-cat="Langue">
+          <div class="cr-top"><span class="cr-num">06</span><span class="cr-cat">Langue</span></div>
+          <h3 class="cr-title">Les accords</h3>
+          <p class="cr-why-label">Pourquoi ce cours est important</p>
+          <p class="cr-why">Les accords (sujet-verbe, participe passé) sont la première source de fautes à l'écrit : les maîtriser fait gagner de nombreux points.</p>
+          <a class="cr-btn" href="cours-accords.html">Accéder au cours <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </article>
+        
+        
+        
         <article class="cr-card" data-cat="Expression écrite">
           <div class="cr-top"><span class="cr-num">07</span><span class="cr-cat">Expression écrite</span></div>
           <h3 class="cr-title">Le paragraphe argumenté</h3>
@@ -2021,6 +2074,7 @@
           <p class="cr-why">Savoir construire un paragraphe, c'est apprendre à présenter une idée claire et à l'appuyer sur des exemples : c'est la brique de tout texte.</p>
           <a class="cr-btn" href="cours-paragraphe.html">Accéder au cours <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </article>
+        
         <article class="cr-card" data-cat="Expression écrite">
           <div class="cr-top"><span class="cr-num">08</span><span class="cr-cat">Expression écrite</span></div>
           <h3 class="cr-title">La dissertation</h3>
@@ -2035,6 +2089,23 @@
           <p class="cr-why">Il apprend à lire un texte en profondeur et à justifier son interprétation par des preuves.</p>
           <a class="cr-btn" href="cours-commentaire-compose.html">Accéder au cours <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </article>
+        
+        <article class="cr-card" data-cat="Expression écrite">
+          <div class="cr-top"><span class="cr-num">08</span><span class="cr-cat">Expression écrite</span></div>
+          <h3 class="cr-title">La dissertation</h3>
+          <p class="cr-why-label">Pourquoi ce cours est important</p>
+          <p class="cr-why">Exercice central des examens, elle apprend à raisonner, à argumenter et à organiser sa pensée.</p>
+          <a class="cr-btn" href="cours-dissertation.html">Accéder au cours <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </article>
+        <article class="cr-card" data-cat="Expression écrite">
+          <div class="cr-top"><span class="cr-num">09</span><span class="cr-cat">Expression écrite</span></div>
+          <h3 class="cr-title">Le commentaire composé</h3>
+          <p class="cr-why-label">Pourquoi ce cours est important</p>
+          <p class="cr-why">Il apprend à lire un texte en profondeur et à justifier son interprétation par des preuves.</p>
+          <a class="cr-btn" href="cours-commentaire-compose.html">Accéder au cours <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </article>
+        
+        
         <article class="cr-card" data-cat="Expression écrite">
           <div class="cr-top"><span class="cr-num">10</span><span class="cr-cat">Expression écrite</span></div>
           <h3 class="cr-title">Le résumé de texte</h3>
@@ -2088,6 +2159,20 @@
     </div>
   </section>
 
+    <!-- refs-externes -->
+  <section class="refs-sec" aria-labelledby="refs-title">
+    <div class="refs-inner">
+      <h2 class="refs-title" id="refs-title">Pour réviser ailleurs aussi</h2>
+      <p class="refs-intro">Des références gratuites pour vérifier une règle ou s’entraîner.</p>
+      <ul class="refs-list">
+        <li><a href="https://www.dictionnaire-academie.fr/" target="_blank" rel="noopener">Dictionnaire de l’Académie française</a><span>Le dictionnaire de référence, consultable gratuitement.</span></li>
+        <li><a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/la-ponctuation/virgule" target="_blank" rel="noopener">La virgule – Office québécois de la langue française</a><span>Des règles de ponctuation expliquées simplement, avec des exemples.</span></li>
+        <li><a href="https://www.cnrtl.fr/" target="_blank" rel="noopener">CNRTL</a><span>Dictionnaires, étymologies et synonymes d’un laboratoire du CNRS.</span></li>
+        <li><a href="https://apprendre.tv5monde.com/fr" target="_blank" rel="noopener">Apprendre le français avec TV5MONDE</a><span>Des exercices et des vidéos pour travailler la langue à son rythme.</span></li>
+      </ul>
+    </div>
+  </section>
+
   <footer class="footer-wrapper" id="contact" role="contentinfo">
     <div class="footer-card">
       <div class="footer-grid">
@@ -2100,7 +2185,7 @@
             Image carrée recommandée (sera rognée en cercle)
             -->
             <img
-              src="images/favicon.png"
+              src="images/Favicon.png"
               alt="Logo Congo-lettres"
               class="footer-logo-img"
               width="40" height="40"
@@ -2327,7 +2412,7 @@
     icon: '🏠',
     title: 'Accueil',
     desc: 'Congo-lettres : articles et notions éducatives sur la littérature congolaise.',
-    href: 'https://mpouck.github.io/',
+    href: 'https://congolettres.github.io/',
     keywords: ['accueil', 'home', 'congo-lettres', 'littérature congolaise']
   },
   {
@@ -2335,7 +2420,7 @@
     icon: 'ℹ️',
     title: 'À propos',
     desc: 'Présentation de Congo-lettres, de son auteur et de sa mission éducative.',
-    href: 'https://mpouck.github.io/about.html',
+    href: 'https://congolettres.github.io/about.html',
     keywords: ['about', 'a propos', 'présentation', 'congo-lettres', 'auteur']
   },
   {
@@ -2343,7 +2428,7 @@
     icon: '📁',
     title: 'Projets',
     desc: 'Découvrez quelques projets et réalisations de Congo-lettres.',
-    href: 'https://mpouck.github.io/projet.html',
+    href: 'https://congolettres.github.io/projet.html',
     keywords: ['projets', 'réalisations', 'travaux']
   },
   {
@@ -2351,7 +2436,7 @@
     icon: '📖',
     title: 'Romans',
     desc: 'Le roman congolais : repères, œuvres incontournables et méthode de lecture.',
-    href: 'https://mpouck.github.io/romans.html',
+    href: 'https://congolettres.github.io/romans.html',
     keywords: ['roman', 'romans', 'littérature congolaise', 'Sony Labou Tansi', 'Mabanckou', 'Lopes', 'Dongala']
   },
   {
@@ -2359,7 +2444,7 @@
     icon: '🪶',
     title: 'Poésie',
     desc: 'La poésie congolaise : poètes, recueils majeurs et méthode de lecture.',
-    href: 'https://mpouck.github.io/poesie.html',
+    href: 'https://congolettres.github.io/poesie.html',
     keywords: ['poésie', 'poème', 'Tchicaya U Tam\'si', 'Tati-Loutard']
   },
   {
@@ -2367,7 +2452,7 @@
     icon: '🎭',
     title: 'Théâtre',
     desc: 'Le théâtre congolais : pièces, auteurs et méthode de lecture.',
-    href: 'https://mpouck.github.io/theatre.html',
+    href: 'https://congolettres.github.io/theatre.html',
     keywords: ['théâtre', 'pièce', 'Sony Labou Tansi', 'Rocado Zulu']
   },
   {
@@ -2375,7 +2460,7 @@
     icon: '✍️',
     title: 'Auteurs',
     desc: 'Portraits des grands écrivains congolais et leurs œuvres majeures.',
-    href: 'https://mpouck.github.io/auteurs.html',
+    href: 'https://congolettres.github.io/auteurs.html',
     keywords: ['auteurs', 'écrivains', 'portraits']
   },
   {
@@ -2383,7 +2468,7 @@
     icon: '🧭',
     title: 'Méthodes',
     desc: 'Dissertation, commentaire, résumé, fiche de lecture : les méthodes pour réussir.',
-    href: 'https://mpouck.github.io/methodes.html',
+    href: 'https://congolettres.github.io/methodes.html',
     keywords: ['méthode', 'dissertation', 'commentaire', 'fiche de lecture']
   },
   {
@@ -2391,7 +2476,7 @@
     icon: '🕰️',
     title: 'Histoire littéraire',
     desc: 'Repères chronologiques de la littérature congolaise.',
-    href: 'https://mpouck.github.io/histoire-litteraire.html',
+    href: 'https://congolettres.github.io/histoire-litteraire.html',
     keywords: ['histoire', 'chronologie', 'littérature congolaise']
   },
   {
@@ -2399,7 +2484,7 @@
     icon: '✍️',
     title: 'Sony Labou Tansi',
     desc: 'Biographie, œuvres complètes, prix et style du romancier et dramaturge congolais.',
-    href: 'https://mpouck.github.io/sony-labou-tansi.html',
+    href: 'https://congolettres.github.io/sony-labou-tansi.html',
     keywords: ['Sony Labou Tansi', 'La Vie et demie', 'Rocado Zulu Théâtre', 'auteur', 'romancier', 'dramaturge']
   },
   {
@@ -2407,7 +2492,7 @@
     icon: '🎓',
     title: 'Cours de français',
     desc: 'Les cours de langue, d\'expression écrite et de littérature, avec leur importance.',
-    href: 'https://mpouck.github.io/cours.html',
+    href: 'https://congolettres.github.io/cours.html',
     keywords: ['cours', 'français', 'grammaire', 'conjugaison', 'orthographe', 'dissertation']
   },
   {
@@ -2415,7 +2500,7 @@
     icon: '📰',
     title: 'Blog',
     desc: 'Articles sur la littérature congolaise, le français et l\'éducation.',
-    href: 'https://mpouck.github.io/blog.html',
+    href: 'https://congolettres.github.io/blog.html',
     keywords: ['blog', 'articles', 'littérature', 'français', 'éducation']
   },
   {
@@ -2423,7 +2508,7 @@
     icon: '🔎',
     title: 'Découvertes',
     desc: 'Découvertes et notions éducatives à explorer sur Congo-lettres.',
-    href: 'https://mpouck.github.io/decouvertes.html',
+    href: 'https://congolettres.github.io/decouvertes.html',
     keywords: ['découvertes', 'notions', 'éducation', 'culture']
   },
   {
@@ -2431,7 +2516,7 @@
     icon: '✉️',
     title: 'Contact',
     desc: 'Contactez Congo-lettres pour une question ou une collaboration.',
-    href: 'https://mpouck.github.io/contact.html',
+    href: 'https://congolettres.github.io/contact.html',
     keywords: ['contact', 'email', 'collaboration', 'abonnement']
   },
 
@@ -2443,7 +2528,7 @@
     icon: '📜',
     title: 'Conditions d\'utilisation',
     desc: 'Consultez les conditions d\'utilisation du site.',
-    href: 'https://mpouck.github.io/conditions-utilisation.html',
+    href: 'https://congolettres.github.io/conditions-utilisation.html',
     keywords: ['conditions', 'mentions', 'utilisation', 'legal']
   },
   {
@@ -2451,7 +2536,7 @@
     icon: '🔒',
     title: 'Politique de confidentialité',
     desc: 'Informations sur la confidentialité et la protection des données.',
-    href: 'https://mpouck.github.io/politique-confidentialite.html',
+    href: 'https://congolettres.github.io/politique-confidentialite.html',
     keywords: ['confidentialité', 'données', 'privacy', 'rgpd']
   },
 
@@ -2463,7 +2548,7 @@
     icon: '✍️',
     title: 'Les tendances UI/UX qui vont dominer 2026',
     desc: 'Minimalisme, bento grids, interfaces IA : un tour des tendances design.',
-    href: 'https://mpouck.github.io/article-uiux-2026.html',
+    href: 'https://congolettres.github.io/article-uiux-2026.html',
     keywords: ['ui ux', 'design', 'tendances', 'interface', 'ux']
   },
   {
@@ -2471,7 +2556,7 @@
     icon: '\u270D\uFE0F',
     title: 'Comment rediger une dissertation francaise reussie en 2026',
     desc: 'Une methode precise et reproductible pour reussir la dissertation.',
-    href: 'https://mpouck.github.io/article-dissertation-francaise-2026.html',
+    href: 'https://congolettres.github.io/article-dissertation-francaise-2026.html',
     keywords: ['dissertation', 'francais', 'education', 'methode']
   },
 ];
@@ -2630,11 +2715,103 @@
 
   <script>
     (function () {
-      var chips = document.querySelectorAll('.cr-chip'), cards = document.querySelectorAll('.cr-card');
+      /* ── Réglages de la pagination ──
+         Chaque catégorie affiche PAR_PAGE cours par page.
+         Dès qu'une catégorie dépasse PAR_PAGE cours, sa pagination apparaît. */
+      var PAR_PAGE = 6;
+
+      var CATS = {
+        'Langue': { ico: '📘', color: '#3b82f6', desc: 'Les bases de la langue : règles, formes et vocabulaire.' },
+        'Expression écrite': { ico: '✍️', color: '#10b981', desc: 'Apprendre à construire et à rédiger : paragraphe, dissertation, lettre…' },
+        'Littérature': { ico: '📚', color: '#c9a76c', desc: 'Comprendre, analyser et interpréter les textes.' }
+      };
+
+      var chips = document.querySelectorAll('.cr-chip');
+      var grille = document.querySelector('.cr-grid');
+      var cards = Array.prototype.slice.call(grille.querySelectorAll('.cr-card'));
+      var filtre = 'all';
+      var pages = {};   /* page courante de chaque catégorie */
+
+      function parCat(c) { return cards.filter(function (k) { return k.dataset.cat === c; }); }
+
+      /* Compteurs des filtres calculés automatiquement */
+      chips.forEach(function (c) {
+        var f = c.dataset.f, dot = c.querySelector('.cr-dot');
+        var n = f === 'all' ? cards.length : parCat(f).length;
+        c.textContent = (f === 'all' ? 'Tous les cours' : f) + ' (' + n + ')';
+        if (dot) c.insertBefore(dot, c.firstChild);
+      });
+
+      function bouton(label, off, fn) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'cr-pg'; b.textContent = label; b.disabled = off;
+        b.addEventListener('click', fn);
+        return b;
+      }
+
+      function section(cat) {
+        var liste = parCat(cat);
+        if (!liste.length) return null;
+        var total = Math.ceil(liste.length / PAR_PAGE);
+        var page = Math.min(pages[cat] || 1, total);
+        pages[cat] = page;
+
+        var sec = document.createElement('section');
+        sec.className = 'cr-section'; sec.dataset.cat = cat;
+
+        var meta = CATS[cat] || { ico: '📄', color: '#c9a76c', desc: '' };
+        var h = document.createElement('div');
+        h.className = 'cr-group'; h.style.setProperty('--gc', meta.color);
+        h.innerHTML = '<div class="cr-group-ico">' + meta.ico + '</div><div><div class="cr-group-name">' + cat +
+          ' <span class="cr-group-count">' + liste.length + ' cours</span></div><p class="cr-group-desc">' + meta.desc + '</p></div>';
+        sec.appendChild(h);
+
+        var inner = document.createElement('div');
+        inner.className = 'cr-cards';
+        liste.slice((page - 1) * PAR_PAGE, page * PAR_PAGE).forEach(function (k) { k.hidden = false; inner.appendChild(k); });
+        sec.appendChild(inner);
+
+        if (liste.length > PAR_PAGE) {
+          var nav = document.createElement('nav');
+          nav.className = 'cr-pager visible';
+          nav.setAttribute('aria-label', 'Pagination – ' + cat);
+          function aller(n) { pages[cat] = n; render(sec); }
+          nav.appendChild(bouton('‹ Précédent', page === 1, function () { aller(page - 1); }));
+          for (var n = 1; n <= total; n++) {
+            (function (n) {
+              var b = bouton(String(n), false, function () { aller(n); });
+              if (n === page) { b.classList.add('active'); b.setAttribute('aria-current', 'page'); }
+              nav.appendChild(b);
+            })(n);
+          }
+          nav.appendChild(bouton('Suivant ›', page === total, function () { aller(page + 1); }));
+          sec.appendChild(nav);
+        }
+        return sec;
+      }
+
+      /* scrollVers : section à remettre en haut de l'écran après un changement de page */
+      function render(scrollVers) {
+        var cat = scrollVers && scrollVers.dataset ? scrollVers.dataset.cat : null;
+        grille.innerHTML = '';
+        Object.keys(CATS).forEach(function (c) {
+          if (filtre !== 'all' && filtre !== c) return;
+          var sec = section(c);
+          if (sec) grille.appendChild(sec);
+        });
+        if (cat) {
+          var cible = grille.querySelector('.cr-section[data-cat="' + cat + '"]');
+          if (cible) window.scrollTo({ top: cible.getBoundingClientRect().top + window.pageYOffset - 110, behavior: 'smooth' });
+        }
+      }
+
       chips.forEach(function (c) { c.addEventListener('click', function () {
-        chips.forEach(function (x) { x.classList.remove('active'); }); c.classList.add('active');
-        cards.forEach(function (k) { k.hidden = !(c.dataset.f === 'all' || k.dataset.cat === c.dataset.f); });
+        chips.forEach(function (x) { x.classList.remove('active'); });
+        c.classList.add('active');
+        filtre = c.dataset.f; pages = {}; render();
       }); });
+
+      render();
     })();
   </script>
 </body>

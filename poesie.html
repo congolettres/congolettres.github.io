@@ -4,23 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>La poésie congolaise – Congo-lettres</title>
-  <link rel="canonical" href="https://mpouck.github.io/poesie.html">
+  <link rel="canonical" href="https://congolettres.github.io/poesie.html">
   <meta name="description" content="La poésie congolaise : poètes, recueils majeurs de Tchicaya U Tam'si et Tati-Loutard, thèmes et méthode pour analyser un poème.">
   <meta name="keywords" content="poésie congolaise, Tchicaya U Tam'si, Tati-Loutard, recueil, analyse de poème">
   <meta property="og:title" content="La poésie congolaise – Congo-lettres">
   <meta property="og:description" content="La poésie congolaise : poètes, recueils majeurs de Tchicaya U Tam'si et Tati-Loutard, thèmes et méthode pour analyser un poème.">
-  <meta property="og:url" content="https://mpouck.github.io/poesie.html">
+  <meta property="og:url" content="https://congolettres.github.io/poesie.html">
   <meta property="og:image" content="https://mpouck.github.io/image2.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="favicon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TSLNZGEPK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4TSLNZGEPK');
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet" />
@@ -1780,7 +1773,9 @@
     .book-title { font-size: 1.05rem; font-weight: 700; letter-spacing: -.02em; line-height: 1.3; color: var(--text-dark); }
     .book-author { font-size: .8rem; font-weight: 600; color: var(--text-muted); }
     .book-desc { font-size: .83rem; line-height: 1.7; color: var(--text-muted); margin-top: 6px; }
-    .book-link { margin-top: 10px; font-size: .82rem; font-weight: 600; color: var(--btn-primary); text-decoration: none; }
+    .book-link { display:inline-flex; align-items:center; gap:6px; align-self:flex-start; margin-top:auto; padding:9px 16px; border-radius:99px; background:var(--btn-primary); color:var(--btn-p-text); font-size:.8rem; font-weight:600; text-decoration:none; transition:transform .2s ease, box-shadow .2s ease; }
+    .book-desc { margin-bottom:14px; }
+    .book-link:hover { transform:translateY(-2px); box-shadow:var(--shadow-card); }
     .theme-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .steps { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; counter-reset: st; }
     .step { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; background: var(--bg-nav); border: 1px solid var(--border-nav); border-radius: 18px; box-shadow: var(--shadow-card); padding: 22px 24px; }
@@ -1808,6 +1803,24 @@
       .profile-photo { width: 100%; max-width: 260px; margin: 0 auto; }
     }
   </style>
+<style>@media (min-width:701px){.book-grid{grid-template-columns:repeat(2,1fr)!important}}</style>
+<style>
+    /* Liens utiles (sources externes) */
+    .refs-sec { padding: 56px 0 8px; font-family: var(--font, 'DM Sans', sans-serif); }
+    .refs-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+    .refs-title { font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; color: var(--text-dark, #0d1b2a); margin-bottom: 6px; }
+    .refs-intro { font-size: .95rem; color: var(--text-muted, #64748b); margin-bottom: 22px; }
+    .refs-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .refs-list li { background: var(--bg-nav, #fff); border: 1px solid var(--border-nav, rgba(0,0,0,.07)); border-radius: 16px; padding: 16px 18px; }
+    .refs-list a { display: block; font-weight: 700; font-size: .95rem; color: var(--text-dark, #0d1b2a); text-decoration: underline; text-decoration-color: #c9a76c; text-underline-offset: 3px; margin-bottom: 4px; }
+    .refs-list a:hover { color: #c9a76c; }
+    .refs-list span { display: block; font-size: .85rem; line-height: 1.6; color: var(--text-muted, #64748b); }
+    @media (max-width: 640px) { .refs-inner { padding: 0 20px; } }
+  </style>
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Congo-lettres">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://congolettres.github.io/"}, {"@type": "ListItem", "position": 2, "name": "La poésie congolaise", "item": "https://congolettres.github.io/poesie.html"}]}</script>
 </head>
 <body>
 
@@ -1819,7 +1832,7 @@
 
       <!-- [CONFIG] Liens desktop -->
       <ul class="nav-links" role="list">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="blog.html">Blog</a></li>
 
         <li class="nav-has-dropdown" id="deskPages">
@@ -1830,11 +1843,12 @@
             </svg>
           </button>
           <div class="nav-drop-panel" id="pagesPanel" role="menu">
-            <a href="about.html"     role="menuitem"><span class="page-icon">👤</span> A propos de nous</a>
+            <a href="about.html"     role="menuitem"><span class="page-icon">👤</span> À propos</a>
             <a href="projet.html" role="menuitem"><span class="page-icon">🖼️</span> Projets</a>
           </div>
         </li>
 
+        <li><a href="cours.html">Cours</a></li>
         <li><a href="decouvertes.html">Découvertes</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -1890,6 +1904,7 @@
             </div>
           </div>
         </li>
+        <li><a href="cours.html" role="menuitem">Cours</a></li>
         <li><a href="decouvertes.html" role="menuitem">Découvertes</a></li>
         <li><a href="contact.html"    role="menuitem">Contact</a></li>
       </ul>
@@ -1957,10 +1972,10 @@
         <p class="sec-sub">Une première sélection, par ordre de parution.</p>
       </div>
       <div class="book-grid">
-        <article class="book-card"><div class="book-cover"><img src="images/le-mauvais-sang.jpg" alt="Le Mauvais Sang" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1955</span><h3 class="book-title">Le Mauvais Sang</h3><span class="book-author">Tchicaya U Tam'si</span><p class="book-desc">Premier grand recueil du poète : une poésie dense, aux images fortes, marquée par l'histoire et la révolte.</p></div></article>
-        <article class="book-card"><div class="book-cover"><img src="images/feu-de-brousse.jpg" alt="Feu de brousse" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1957</span><h3 class="book-title">Feu de brousse</h3><span class="book-author">Tchicaya U Tam'si</span><p class="book-desc">Un recueil où la nature, le fleuve et la mémoire se mêlent dans une écriture puissante.</p></div></article>
-        <article class="book-card"><div class="book-cover"><img src="images/epitome.jpg" alt="Épitomé" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1962</span><h3 class="book-title">Épitomé</h3><span class="book-author">Tchicaya U Tam'si</span><p class="book-desc">Un long poème de deuil et de colère, lié à la mort de Patrice Lumumba.</p></div></article>
-        <article class="book-card"><div class="book-cover"><img src="images/poemes-de-la-mer.jpg" alt="Poèmes de la mer" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1968</span><h3 class="book-title">Poèmes de la mer</h3><span class="book-author">Jean-Baptiste Tati-Loutard</span><p class="book-desc">Un recueil tourné vers la mer, ses images et ses résonances intimes.</p></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/poesie/le-mauvais-sang.jpg" alt="Le Mauvais Sang" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1955</span><h3 class="book-title">Le Mauvais Sang</h3><span class="book-author">Tchicaya U Tam'si</span><p class="book-desc">Premier grand recueil du poète : une poésie dense, aux images fortes, marquée par l'histoire et la révolte.</p><a class="book-link" href="recueil-le-mauvais-sang.html">Découvrir le recueil →</a></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/poesie/feu-de-brousse.jpg" alt="Feu de brousse" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1957</span><h3 class="book-title">Feu de brousse</h3><span class="book-author">Tchicaya U Tam'si</span><p class="book-desc">Un recueil où la nature, le fleuve et la mémoire se mêlent dans une écriture puissante.</p><a class="book-link" href="recueil-feu-de-brousse.html">Découvrir le recueil →</a></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/poesie/epitome.jpg" alt="Épitomé" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1962</span><h3 class="book-title">Épitomé</h3><span class="book-author">Tchicaya U Tam'si</span><p class="book-desc">Un long poème de deuil et de colère, lié à la mort de Patrice Lumumba.</p><a class="book-link" href="recueil-epitome.html">Découvrir le recueil →</a></div></article>
+        <article class="book-card"><div class="book-cover"><img src="images/poesie/poemes-de-la-mer.jpg" alt="Poèmes de la mer" loading="lazy" onerror="this.remove()"/></div><div class="book-body"><span class="book-year">1968</span><h3 class="book-title">Poèmes de la mer</h3><span class="book-author">Jean-Baptiste Tati-Loutard</span><p class="book-desc">Un recueil tourné vers la mer, ses images et ses résonances intimes.</p><a class="book-link" href="recueil-poemes-de-la-mer.html">Découvrir le recueil →</a></div></article>
       </div>
     </div>
   </section>
@@ -2010,6 +2025,20 @@
     </div>
   </section>
 
+    <!-- refs-externes -->
+  <section class="refs-sec" aria-labelledby="refs-title">
+    <div class="refs-inner">
+      <h2 class="refs-title" id="refs-title">Pour aller plus loin</h2>
+      <p class="refs-intro">Sur les poètes, et sur la façon de lire un poème.</p>
+      <ul class="refs-list">
+        <li><a href="https://fr.wikipedia.org/wiki/Tchicaya_U_Tam%27si" target="_blank" rel="noopener">Tchicaya U Tam’si sur Wikipédia</a><span>Sa vie, ses recueils et sa place dans la poésie d’expression française.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Jean-Baptiste_Tati-Loutard" target="_blank" rel="noopener">Jean-Baptiste Tati-Loutard sur Wikipédia</a><span>Le poète, le critique et l’homme politique congolais.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Vers_libre" target="_blank" rel="noopener">Le vers libre</a><span>Pour comprendre un poème qui ne suit ni rime ni mesure fixe.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Figure_de_style" target="_blank" rel="noopener">Les figures de style</a><span>Un tour d’horizon pour repérer métaphores, comparaisons et autres effets.</span></li>
+      </ul>
+    </div>
+  </section>
+
   <footer class="footer-wrapper" id="contact" role="contentinfo">
     <div class="footer-card">
       <div class="footer-grid">
@@ -2022,7 +2051,7 @@
             Image carrée recommandée (sera rognée en cercle)
             -->
             <img
-              src="images/favicon.png"
+              src="images/Favicon.png"
               alt="Logo Congo-lettres"
               class="footer-logo-img"
               width="40" height="40"
@@ -2071,6 +2100,7 @@
           <ul>
             <li><a href="about.html">À propos</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="cours.html">Cours de français</a></li>
             <li><a href="decouvertes.html">Découvertes</a></li>
             <li><a href="projet.html">Projets</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -2135,9 +2165,9 @@
         <p class="footer-copy">© 2026 Congo-lettres. Tous droits réservés.</p>
         <nav class="footer-legal" aria-label="Liens légaux">
           <a href="conditions-utilisation.html">Conditions d'utilisation</a>
-          <a href="politique-confidentialite.html">Politiques de confidentialité</a>
-          <a href="#">cookies</a>
-          <a href="sitemap.xml">Sitemap</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="politique-confidentialite.html#cookies">Cookies</a>
+          <a href="sitemap.xml">Plan du site</a>
         </nav>
       </div>
     </div>
@@ -2248,7 +2278,7 @@
     icon: '🏠',
     title: 'Accueil',
     desc: 'Congo-lettres : articles et notions éducatives sur la littérature congolaise.',
-    href: 'https://mpouck.github.io/',
+    href: 'https://congolettres.github.io/',
     keywords: ['accueil', 'home', 'congo-lettres', 'littérature congolaise']
   },
   {
@@ -2256,7 +2286,7 @@
     icon: 'ℹ️',
     title: 'À propos',
     desc: 'Présentation de Congo-lettres, de son auteur et de sa mission éducative.',
-    href: 'https://mpouck.github.io/about.html',
+    href: 'https://congolettres.github.io/about.html',
     keywords: ['about', 'a propos', 'présentation', 'congo-lettres', 'auteur']
   },
   {
@@ -2264,7 +2294,7 @@
     icon: '📁',
     title: 'Projets',
     desc: 'Découvrez quelques projets et réalisations de Congo-lettres.',
-    href: 'https://mpouck.github.io/projet.html',
+    href: 'https://congolettres.github.io/projet.html',
     keywords: ['projets', 'réalisations', 'travaux']
   },
   {
@@ -2272,7 +2302,7 @@
     icon: '📖',
     title: 'Romans',
     desc: 'Le roman congolais : repères, œuvres incontournables et méthode de lecture.',
-    href: 'https://mpouck.github.io/romans.html',
+    href: 'https://congolettres.github.io/romans.html',
     keywords: ['roman', 'romans', 'littérature congolaise', 'Sony Labou Tansi', 'Mabanckou', 'Lopes', 'Dongala']
   },
   {
@@ -2280,7 +2310,7 @@
     icon: '🪶',
     title: 'Poésie',
     desc: 'La poésie congolaise : poètes, recueils majeurs et méthode de lecture.',
-    href: 'https://mpouck.github.io/poesie.html',
+    href: 'https://congolettres.github.io/poesie.html',
     keywords: ['poésie', 'poème', 'Tchicaya U Tam\'si', 'Tati-Loutard']
   },
   {
@@ -2288,7 +2318,7 @@
     icon: '🎭',
     title: 'Théâtre',
     desc: 'Le théâtre congolais : pièces, auteurs et méthode de lecture.',
-    href: 'https://mpouck.github.io/theatre.html',
+    href: 'https://congolettres.github.io/theatre.html',
     keywords: ['théâtre', 'pièce', 'Sony Labou Tansi', 'Rocado Zulu']
   },
   {
@@ -2296,31 +2326,55 @@
     icon: '✍️',
     title: 'Auteurs',
     desc: 'Portraits des grands écrivains congolais et leurs œuvres majeures.',
-    href: 'https://mpouck.github.io/auteurs.html',
+    href: 'https://congolettres.github.io/auteurs.html',
     keywords: ['auteurs', 'écrivains', 'portraits']
   },
   {
     type: 'Page',
+    icon: '👤',
+    title: "L'auteur du site",
+    desc: 'MPOUCK Jho Chadrack, professeur de français et fondateur de Congo-lettres.',
+    href: 'https://congolettres.github.io/mpouck-jho-chadrack.html',
+    keywords: ['auteur', 'mpouck', 'chadrack', 'professeur', 'fondateur', 'profil']
+  },
+  {
+    type: 'Page',
     icon: '🧭',
-    title: 'Méthodes',
-    desc: 'Dissertation, commentaire, résumé, fiche de lecture : les méthodes pour réussir.',
-    href: 'https://mpouck.github.io/methodes.html',
-    keywords: ['méthode', 'dissertation', 'commentaire', 'fiche de lecture']
+    title: 'Contexte social',
+    desc: 'Colonisation, indépendance, pouvoir, oralité, diaspora : le contexte qui éclaire les œuvres congolaises.',
+    href: 'https://congolettres.github.io/contexte-social.html',
+    keywords: ['contexte social', 'société', 'histoire', 'colonisation', 'indépendance', 'diaspora']
   },
   {
     type: 'Page',
     icon: '🕰️',
     title: 'Histoire littéraire',
     desc: 'Repères chronologiques de la littérature congolaise.',
-    href: 'https://mpouck.github.io/histoire-litteraire.html',
+    href: 'https://congolettres.github.io/histoire-litteraire.html',
     keywords: ['histoire', 'chronologie', 'littérature congolaise']
+  },
+  {
+    type: 'Auteur',
+    icon: '✍️',
+    title: 'Sony Labou Tansi',
+    desc: 'Biographie, œuvres complètes, prix et style du romancier et dramaturge congolais.',
+    href: 'https://congolettres.github.io/sony-labou-tansi.html',
+    keywords: ['Sony Labou Tansi', 'La Vie et demie', 'Rocado Zulu Théâtre', 'auteur', 'romancier', 'dramaturge']
+  },
+  {
+    type: 'Page',
+    icon: '🎓',
+    title: 'Cours de français',
+    desc: 'Les cours de langue, d\'expression écrite et de littérature, avec leur importance.',
+    href: 'https://congolettres.github.io/cours.html',
+    keywords: ['cours', 'français', 'grammaire', 'conjugaison', 'orthographe', 'dissertation']
   },
   {
     type: 'Page',
     icon: '📰',
     title: 'Blog',
     desc: 'Articles sur la littérature congolaise, le français et l\'éducation.',
-    href: 'https://mpouck.github.io/blog.html',
+    href: 'https://congolettres.github.io/blog.html',
     keywords: ['blog', 'articles', 'littérature', 'français', 'éducation']
   },
   {
@@ -2328,7 +2382,7 @@
     icon: '🔎',
     title: 'Découvertes',
     desc: 'Découvertes et notions éducatives à explorer sur Congo-lettres.',
-    href: 'https://mpouck.github.io/decouvertes.html',
+    href: 'https://congolettres.github.io/decouvertes.html',
     keywords: ['découvertes', 'notions', 'éducation', 'culture']
   },
   {
@@ -2336,7 +2390,7 @@
     icon: '✉️',
     title: 'Contact',
     desc: 'Contactez Congo-lettres pour une question ou une collaboration.',
-    href: 'https://mpouck.github.io/contact.html',
+    href: 'https://congolettres.github.io/contact.html',
     keywords: ['contact', 'email', 'collaboration', 'abonnement']
   },
 
@@ -2348,7 +2402,7 @@
     icon: '📜',
     title: 'Conditions d\'utilisation',
     desc: 'Consultez les conditions d\'utilisation du site.',
-    href: 'https://mpouck.github.io/conditions-utilisation.html',
+    href: 'https://congolettres.github.io/conditions-utilisation.html',
     keywords: ['conditions', 'mentions', 'utilisation', 'legal']
   },
   {
@@ -2356,7 +2410,7 @@
     icon: '🔒',
     title: 'Politique de confidentialité',
     desc: 'Informations sur la confidentialité et la protection des données.',
-    href: 'https://mpouck.github.io/politique-confidentialite.html',
+    href: 'https://congolettres.github.io/politique-confidentialite.html',
     keywords: ['confidentialité', 'données', 'privacy', 'rgpd']
   },
 
@@ -2368,7 +2422,7 @@
     icon: '✍️',
     title: 'Les tendances UI/UX qui vont dominer 2026',
     desc: 'Minimalisme, bento grids, interfaces IA : un tour des tendances design.',
-    href: 'https://mpouck.github.io/article-uiux-2026.html',
+    href: 'https://congolettres.github.io/article-uiux-2026.html',
     keywords: ['ui ux', 'design', 'tendances', 'interface', 'ux']
   },
   {
@@ -2376,7 +2430,7 @@
     icon: '\u270D\uFE0F',
     title: 'Comment rediger une dissertation francaise reussie en 2026',
     desc: 'Une methode precise et reproductible pour reussir la dissertation.',
-    href: 'https://mpouck.github.io/article-dissertation-francaise-2026.html',
+    href: 'https://congolettres.github.io/article-dissertation-francaise-2026.html',
     keywords: ['dissertation', 'francais', 'education', 'methode']
   },
 ];

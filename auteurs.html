@@ -4,23 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Les auteurs congolais – Congo-lettres</title>
-  <link rel="canonical" href="https://mpouck.github.io/auteurs.html">
+  <link rel="canonical" href="https://congolettres.github.io/auteurs.html">
   <meta name="description" content="Portraits des grands écrivains congolais : Sony Labou Tansi, Tchicaya U Tam'si, Henri Lopes, Emmanuel Dongala, Alain Mabanckou et Tati-Loutard.">
   <meta name="keywords" content="auteurs congolais, écrivains congolais, Sony Labou Tansi, Tchicaya U Tam'si, Henri Lopes, Dongala, Mabanckou, Tati-Loutard">
   <meta property="og:title" content="Les auteurs congolais – Congo-lettres">
   <meta property="og:description" content="Portraits des grands écrivains congolais : Sony Labou Tansi, Tchicaya U Tam'si, Henri Lopes, Emmanuel Dongala, Alain Mabanckou et Tati-Loutard.">
-  <meta property="og:url" content="https://mpouck.github.io/auteurs.html">
+  <meta property="og:url" content="https://congolettres.github.io/auteurs.html">
   <meta property="og:image" content="https://mpouck.github.io/image2.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="favicon.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TSLNZGEPK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4TSLNZGEPK');
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet" />
@@ -1807,7 +1800,25 @@
       .profile { grid-template-columns: 1fr; padding: 20px; }
       .profile-photo { width: 100%; max-width: 260px; margin: 0 auto; }
     }
+      .profile{scroll-margin-top:110px}
   </style>
+<style>
+    /* Liens utiles (sources externes) */
+    .refs-sec { padding: 56px 0 8px; font-family: var(--font, 'DM Sans', sans-serif); }
+    .refs-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+    .refs-title { font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; color: var(--text-dark, #0d1b2a); margin-bottom: 6px; }
+    .refs-intro { font-size: .95rem; color: var(--text-muted, #64748b); margin-bottom: 22px; }
+    .refs-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .refs-list li { background: var(--bg-nav, #fff); border: 1px solid var(--border-nav, rgba(0,0,0,.07)); border-radius: 16px; padding: 16px 18px; }
+    .refs-list a { display: block; font-weight: 700; font-size: .95rem; color: var(--text-dark, #0d1b2a); text-decoration: underline; text-decoration-color: #c9a76c; text-underline-offset: 3px; margin-bottom: 4px; }
+    .refs-list a:hover { color: #c9a76c; }
+    .refs-list span { display: block; font-size: .85rem; line-height: 1.6; color: var(--text-muted, #64748b); }
+    @media (max-width: 640px) { .refs-inner { padding: 0 20px; } }
+  </style>
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Congo-lettres">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://congolettres.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Les auteurs congolais", "item": "https://congolettres.github.io/auteurs.html"}]}</script>
 </head>
 <body>
 
@@ -1819,7 +1830,7 @@
 
       <!-- [CONFIG] Liens desktop -->
       <ul class="nav-links" role="list">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="blog.html">Blog</a></li>
 
         <li class="nav-has-dropdown" id="deskPages">
@@ -1830,11 +1841,12 @@
             </svg>
           </button>
           <div class="nav-drop-panel" id="pagesPanel" role="menu">
-            <a href="about.html"     role="menuitem"><span class="page-icon">👤</span> A propos de nous</a>
+            <a href="about.html"     role="menuitem"><span class="page-icon">👤</span> À propos</a>
             <a href="projet.html" role="menuitem"><span class="page-icon">🖼️</span> Projets</a>
           </div>
         </li>
 
+        <li><a href="cours.html">Cours</a></li>
         <li><a href="decouvertes.html">Découvertes</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -1890,6 +1902,7 @@
             </div>
           </div>
         </li>
+        <li><a href="cours.html" role="menuitem">Cours</a></li>
         <li><a href="decouvertes.html" role="menuitem">Découvertes</a></li>
         <li><a href="contact.html"    role="menuitem">Contact</a></li>
       </ul>
@@ -1952,12 +1965,14 @@
         <p class="sec-sub">Six auteurs pour découvrir la littérature congolaise.</p>
       </div>
       <div class="profiles">
-        <article class="profile"><div class="profile-photo"><img src="images/sony-labou-tansi.jpg" alt="Portrait de Sony Labou Tansi" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Sony Labou Tansi</h3><p class="profile-meta">Romancier · Dramaturge · 1947–1995</p><p class="profile-text">Auteur à la langue inventive et provocatrice, il a marqué à la fois le roman et le théâtre congolais, et fondé le Rocado Zulu Théâtre.</p><ul class="profile-works"><li><strong>La Vie et demie</strong> (1979)</li><li><strong>L'État honteux</strong> (1981)</li><li><strong>La Parenthèse de sang</strong> (1981)</li></ul><p style="margin-top:14px"><a href="sony-labou-tansi.html" class="btn-secondary">Voir sa page complète →</a></p></div></article>
-        <article class="profile"><div class="profile-photo"><img src="images/tchicaya-u-tamsi.jpg" alt="Portrait de Tchicaya U Tam'si" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Tchicaya U Tam'si</h3><p class="profile-meta">Poète · 1931–1988</p><p class="profile-text">Voix majeure de la poésie d'expression française, il est connu pour une écriture dense et pour sa poésie engagée.</p><ul class="profile-works"><li><strong>Le Mauvais Sang</strong> (1955)</li><li><strong>Feu de brousse</strong> (1957)</li><li><strong>Épitomé</strong> (1962)</li></ul></div></article>
-        <article class="profile"><div class="profile-photo"><img src="images/henri-lopes.jpg" alt="Portrait de Henri Lopes" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Henri Lopes</h3><p class="profile-meta">Romancier · 1937–2023</p><p class="profile-text">Écrivain et homme politique, il a mêlé humour, ironie et réflexion sur le pouvoir et l'identité.</p><ul class="profile-works"><li><strong>Tribaliques</strong> (1971), recueil de nouvelles</li><li><strong>Le Pleurer-Rire</strong> (1982)</li><li><strong>Le Chercheur d'Afriques</strong> (1990)</li></ul></div></article>
-        <article class="profile"><div class="profile-photo"><img src="images/emmanuel-dongala.jpg" alt="Portrait de Emmanuel Dongala" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Emmanuel Dongala</h3><p class="profile-meta">Romancier · né en 1941</p><p class="profile-text">Chimiste de formation et écrivain, il aborde dans ses romans la guerre, l'enfance et la dignité humaine.</p><ul class="profile-works"><li><strong>Johnny chien méchant</strong> (2002)</li></ul></div></article>
-        <article class="profile"><div class="profile-photo"><img src="images/alain-mabanckou.jpg" alt="Portrait de Alain Mabanckou" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Alain Mabanckou</h3><p class="profile-meta">Romancier · Poète · né en 1966</p><p class="profile-text">Né à Pointe-Noire, il est l'un des écrivains congolais les plus lus dans le monde, connu pour son humour et son goût de la langue.</p><ul class="profile-works"><li><strong>Verre Cassé</strong> (2005)</li><li><strong>Mémoires de porc-épic</strong> (2006), prix Renaudot</li><li><strong>Demain j'aurai vingt ans</strong> (2010)</li></ul></div></article>
-        <article class="profile"><div class="profile-photo"><img src="images/tati-loutard.jpg" alt="Portrait de Jean-Baptiste Tati-Loutard" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Jean-Baptiste Tati-Loutard</h3><p class="profile-meta">Poète · Critique · 1938–2009</p><p class="profile-text">Poète et critique, il a consacré une œuvre importante à la mer, à la mémoire et à la culture congolaise.</p><ul class="profile-works"><li><strong>Les Racines congolaises</strong> (1968)</li><li><strong>Poèmes de la mer</strong> (1968)</li></ul></div></article>
+        <article class="profile" id="sony-labou-tansi"><div class="profile-photo"><img src="images/sony-labou-tansi.jpg" alt="Portrait de Sony Labou Tansi" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Sony Labou Tansi</h3><p class="profile-meta">Romancier · Dramaturge · 1947–1995</p><p class="profile-text">Auteur à la langue inventive et provocatrice, il a marqué à la fois le roman et le théâtre congolais, et fondé le Rocado Zulu Théâtre.</p><ul class="profile-works"><li><strong>La Vie et demie</strong> (1979)</li><li><strong>L'État honteux</strong> (1981)</li><li><strong>La Parenthèse de sang</strong> (1981)</li></ul><p style="margin-top:14px"><a href="auteurs/sony-labou-tansi.html" class="btn-secondary">Voir sa page complète →</a></p></div></article>
+        
+        <article class="profile" id="tchicaya-u-tamsi"><div class="profile-photo"><img src="images/auteurs/tchicaya-u-tamsi.jpg" alt="Portrait de Tchicaya U Tam'si" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Tchicaya U Tam'si</h3><p class="profile-meta">Poète · 1931–1988</p><p class="profile-text">Voix majeure de la poésie d'expression française, il est connu pour une écriture dense et pour sa poésie engagée.</p><ul class="profile-works"><li><strong>Le Mauvais Sang</strong> (1955)</li><li><strong>Feu de brousse</strong> (1957)</li><li><strong>Épitomé</strong> (1962)</li></ul></div></article>
+        
+        <article class="profile" id="henri-lopes"><div class="profile-photo"><img src="images/auteurs/henri-lopes.jpg" alt="Portrait de Henri Lopes" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Henri Lopes</h3><p class="profile-meta">Romancier · 1937–2023</p><p class="profile-text">Écrivain et homme politique, il a mêlé humour, ironie et réflexion sur le pouvoir et l'identité.</p><ul class="profile-works"><li><strong>Tribaliques</strong> (1971), recueil de nouvelles</li><li><strong>Le Pleurer-Rire</strong> (1982)</li><li><strong>Le Chercheur d'Afriques</strong> (1990)</li></ul></div></article>
+        <article class="profile" id="emmanuel-dongala"><div class="profile-photo"><img src="images/auteurs/emmanuel-dongala.jpg" alt="Portrait de Emmanuel Dongala" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Emmanuel Dongala</h3><p class="profile-meta">Romancier · né en 1941</p><p class="profile-text">Chimiste de formation et écrivain, il aborde dans ses romans la guerre, l'enfance et la dignité humaine.</p><ul class="profile-works"><li><strong>Johnny chien méchant</strong> (2002)</li></ul></div></article>
+        <article class="profile" id="alain-mabanckou"><div class="profile-photo"><img src="images/auteurs/alain-mabanckou.jpg" alt="Portrait de Alain Mabanckou" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Alain Mabanckou</h3><p class="profile-meta">Romancier · Poète · né en 1966</p><p class="profile-text">Né à Pointe-Noire, il est l'un des écrivains congolais les plus lus dans le monde, connu pour son humour et son goût de la langue.</p><ul class="profile-works"><li><strong>Verre Cassé</strong> (2005)</li><li><strong>Mémoires de porc-épic</strong> (2006), prix Renaudot</li><li><strong>Demain j'aurai vingt ans</strong> (2010)</li></ul></div></article>
+        <article class="profile" id="tati-loutard"><div class="profile-photo"><img src="images/auteurs/tati-loutard.jpg" alt="Portrait de Jean-Baptiste Tati-Loutard" loading="lazy" onerror="this.remove()"/></div><div><h3 class="profile-name">Jean-Baptiste Tati-Loutard</h3><p class="profile-meta">Poète · Critique · 1938–2009</p><p class="profile-text">Poète et critique, il a consacré une œuvre importante à la mer, à la mémoire et à la culture congolaise.</p><ul class="profile-works"><li><strong>Les Racines congolaises</strong> (1968)</li><li><strong>Poèmes de la mer</strong> (1968)</li></ul></div></article>
       </div>
     </div>
   </section>
@@ -1987,6 +2002,22 @@
         <a href="blog.html" class="btn-primary">Lire les articles</a>
         <a href="index.html#themes" class="btn-secondary">Autres thématiques</a>
       </div>
+    </div>
+  </section>
+
+    <!-- refs-externes -->
+  <section class="refs-sec" aria-labelledby="refs-title">
+    <div class="refs-inner">
+      <h2 class="refs-title" id="refs-title">Pour lire plus sur chaque auteur</h2>
+      <p class="refs-intro">Une biographie plus détaillée pour chacun des six écrivains.</p>
+      <ul class="refs-list">
+        <li><a href="https://fr.wikipedia.org/wiki/Sony_Labou_Tansi" target="_blank" rel="noopener">Sony Labou Tansi sur Wikipédia</a><span>Sa biographie, ses romans et ses pièces, avec les références utiles.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Tchicaya_U_Tam%27si" target="_blank" rel="noopener">Tchicaya U Tam’si sur Wikipédia</a><span>Sa vie, ses recueils et sa place dans la poésie d’expression française.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Henri_Lopes" target="_blank" rel="noopener">Henri Lopes sur Wikipédia</a><span>Le parcours de l’écrivain et de l’homme politique, œuvre par œuvre.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Emmanuel_Dongala" target="_blank" rel="noopener">Emmanuel Dongala sur Wikipédia</a><span>Sa formation de chimiste, ses romans et ses prix.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Alain_Mabanckou" target="_blank" rel="noopener">Alain Mabanckou sur Wikipédia</a><span>Son parcours, ses livres et ses distinctions.</span></li>
+        <li><a href="https://fr.wikipedia.org/wiki/Jean-Baptiste_Tati-Loutard" target="_blank" rel="noopener">Jean-Baptiste Tati-Loutard sur Wikipédia</a><span>Le poète, le critique et l’homme politique congolais.</span></li>
+      </ul>
     </div>
   </section>
 
@@ -2051,6 +2082,7 @@
           <ul>
             <li><a href="about.html">À propos</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="cours.html">Cours de français</a></li>
             <li><a href="decouvertes.html">Découvertes</a></li>
             <li><a href="projet.html">Projets</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -2115,9 +2147,9 @@
         <p class="footer-copy">© 2026 Congo-lettres. Tous droits réservés.</p>
         <nav class="footer-legal" aria-label="Liens légaux">
           <a href="conditions-utilisation.html">Conditions d'utilisation</a>
-          <a href="politique-confidentialite.html">Politiques de confidentialité</a>
-          <a href="#">cookies</a>
-          <a href="sitemap.xml">Sitemap</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="politique-confidentialite.html#cookies">Cookies</a>
+          <a href="sitemap.xml">Plan du site</a>
         </nav>
       </div>
     </div>
@@ -2228,7 +2260,7 @@
     icon: '🏠',
     title: 'Accueil',
     desc: 'Congo-lettres : articles et notions éducatives sur la littérature congolaise.',
-    href: 'https://mpouck.github.io/',
+    href: 'https://congolettres.github.io/',
     keywords: ['accueil', 'home', 'congo-lettres', 'littérature congolaise']
   },
   {
@@ -2236,7 +2268,7 @@
     icon: 'ℹ️',
     title: 'À propos',
     desc: 'Présentation de Congo-lettres, de son auteur et de sa mission éducative.',
-    href: 'https://mpouck.github.io/about.html',
+    href: 'https://congolettres.github.io/about.html',
     keywords: ['about', 'a propos', 'présentation', 'congo-lettres', 'auteur']
   },
   {
@@ -2244,7 +2276,7 @@
     icon: '📁',
     title: 'Projets',
     desc: 'Découvrez quelques projets et réalisations de Congo-lettres.',
-    href: 'https://mpouck.github.io/projet.html',
+    href: 'https://congolettres.github.io/projet.html',
     keywords: ['projets', 'réalisations', 'travaux']
   },
   {
@@ -2252,7 +2284,7 @@
     icon: '📖',
     title: 'Romans',
     desc: 'Le roman congolais : repères, œuvres incontournables et méthode de lecture.',
-    href: 'https://mpouck.github.io/romans.html',
+    href: 'https://congolettres.github.io/romans.html',
     keywords: ['roman', 'romans', 'littérature congolaise', 'Sony Labou Tansi', 'Mabanckou', 'Lopes', 'Dongala']
   },
   {
@@ -2260,7 +2292,7 @@
     icon: '🪶',
     title: 'Poésie',
     desc: 'La poésie congolaise : poètes, recueils majeurs et méthode de lecture.',
-    href: 'https://mpouck.github.io/poesie.html',
+    href: 'https://congolettres.github.io/poesie.html',
     keywords: ['poésie', 'poème', 'Tchicaya U Tam\'si', 'Tati-Loutard']
   },
   {
@@ -2268,7 +2300,7 @@
     icon: '🎭',
     title: 'Théâtre',
     desc: 'Le théâtre congolais : pièces, auteurs et méthode de lecture.',
-    href: 'https://mpouck.github.io/theatre.html',
+    href: 'https://congolettres.github.io/theatre.html',
     keywords: ['théâtre', 'pièce', 'Sony Labou Tansi', 'Rocado Zulu']
   },
   {
@@ -2276,23 +2308,31 @@
     icon: '✍️',
     title: 'Auteurs',
     desc: 'Portraits des grands écrivains congolais et leurs œuvres majeures.',
-    href: 'https://mpouck.github.io/auteurs.html',
+    href: 'https://congolettres.github.io/auteurs.html',
     keywords: ['auteurs', 'écrivains', 'portraits']
   },
   {
     type: 'Page',
+    icon: '👤',
+    title: "L'auteur du site",
+    desc: 'MPOUCK Jho Chadrack, professeur de français et fondateur de Congo-lettres.',
+    href: 'https://congolettres.github.io/mpouck-jho-chadrack.html',
+    keywords: ['auteur', 'mpouck', 'chadrack', 'professeur', 'fondateur', 'profil']
+  },
+  {
+    type: 'Page',
     icon: '🧭',
-    title: 'Méthodes',
-    desc: 'Dissertation, commentaire, résumé, fiche de lecture : les méthodes pour réussir.',
-    href: 'https://mpouck.github.io/methodes.html',
-    keywords: ['méthode', 'dissertation', 'commentaire', 'fiche de lecture']
+    title: 'Contexte social',
+    desc: 'Colonisation, indépendance, pouvoir, oralité, diaspora : le contexte qui éclaire les œuvres congolaises.',
+    href: 'https://congolettres.github.io/contexte-social.html',
+    keywords: ['contexte social', 'société', 'histoire', 'colonisation', 'indépendance', 'diaspora']
   },
   {
     type: 'Page',
     icon: '🕰️',
     title: 'Histoire littéraire',
     desc: 'Repères chronologiques de la littérature congolaise.',
-    href: 'https://mpouck.github.io/histoire-litteraire.html',
+    href: 'https://congolettres.github.io/histoire-litteraire.html',
     keywords: ['histoire', 'chronologie', 'littérature congolaise']
   },
   {
@@ -2300,15 +2340,23 @@
     icon: '✍️',
     title: 'Sony Labou Tansi',
     desc: 'Biographie, œuvres complètes, prix et style du romancier et dramaturge congolais.',
-    href: 'https://mpouck.github.io/sony-labou-tansi.html',
+    href: 'https://congolettres.github.io/sony-labou-tansi.html',
     keywords: ['Sony Labou Tansi', 'La Vie et demie', 'Rocado Zulu Théâtre', 'auteur', 'romancier', 'dramaturge']
+  },
+  {
+    type: 'Page',
+    icon: '🎓',
+    title: 'Cours de français',
+    desc: 'Les cours de langue, d\'expression écrite et de littérature, avec leur importance.',
+    href: 'https://congolettres.github.io/cours.html',
+    keywords: ['cours', 'français', 'grammaire', 'conjugaison', 'orthographe', 'dissertation']
   },
   {
     type: 'Page',
     icon: '📰',
     title: 'Blog',
     desc: 'Articles sur la littérature congolaise, le français et l\'éducation.',
-    href: 'https://mpouck.github.io/blog.html',
+    href: 'https://congolettres.github.io/blog.html',
     keywords: ['blog', 'articles', 'littérature', 'français', 'éducation']
   },
   {
@@ -2316,7 +2364,7 @@
     icon: '🔎',
     title: 'Découvertes',
     desc: 'Découvertes et notions éducatives à explorer sur Congo-lettres.',
-    href: 'https://mpouck.github.io/decouvertes.html',
+    href: 'https://congolettres.github.io/decouvertes.html',
     keywords: ['découvertes', 'notions', 'éducation', 'culture']
   },
   {
@@ -2324,7 +2372,7 @@
     icon: '✉️',
     title: 'Contact',
     desc: 'Contactez Congo-lettres pour une question ou une collaboration.',
-    href: 'https://mpouck.github.io/contact.html',
+    href: 'https://congolettres.github.io/contact.html',
     keywords: ['contact', 'email', 'collaboration', 'abonnement']
   },
 
@@ -2336,7 +2384,7 @@
     icon: '📜',
     title: 'Conditions d\'utilisation',
     desc: 'Consultez les conditions d\'utilisation du site.',
-    href: 'https://mpouck.github.io/conditions-utilisation.html',
+    href: 'https://congolettres.github.io/conditions-utilisation.html',
     keywords: ['conditions', 'mentions', 'utilisation', 'legal']
   },
   {
@@ -2344,7 +2392,7 @@
     icon: '🔒',
     title: 'Politique de confidentialité',
     desc: 'Informations sur la confidentialité et la protection des données.',
-    href: 'https://mpouck.github.io/politique-confidentialite.html',
+    href: 'https://congolettres.github.io/politique-confidentialite.html',
     keywords: ['confidentialité', 'données', 'privacy', 'rgpd']
   },
 
@@ -2356,7 +2404,7 @@
     icon: '✍️',
     title: 'Les tendances UI/UX qui vont dominer 2026',
     desc: 'Minimalisme, bento grids, interfaces IA : un tour des tendances design.',
-    href: 'https://mpouck.github.io/article-uiux-2026.html',
+    href: 'https://congolettres.github.io/article-uiux-2026.html',
     keywords: ['ui ux', 'design', 'tendances', 'interface', 'ux']
   },
   {
@@ -2364,7 +2412,7 @@
     icon: '\u270D\uFE0F',
     title: 'Comment rediger une dissertation francaise reussie en 2026',
     desc: 'Une methode precise et reproductible pour reussir la dissertation.',
-    href: 'https://mpouck.github.io/article-dissertation-francaise-2026.html',
+    href: 'https://congolettres.github.io/article-dissertation-francaise-2026.html',
     keywords: ['dissertation', 'francais', 'education', 'methode']
   },
 ];
